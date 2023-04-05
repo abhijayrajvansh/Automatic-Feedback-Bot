@@ -20,6 +20,9 @@ def pressDown():
     keyboard.release(Key.down)
     time.sleep(0.1)
 
+def writeComment():
+    keyboard.type('It was a very good experience.')
+
 def fill_feedback():
     pressDown()
     time.sleep(2)
@@ -32,6 +35,7 @@ def fill_feedback():
     pressDown()
     pressDown()
     pressDown()
+    writeComment()
     pressTab()
 
 print("Get ready, and point your cursor at the first index position...")
